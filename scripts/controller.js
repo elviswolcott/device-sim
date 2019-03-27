@@ -9,9 +9,39 @@ var model = new Vue({
     currentScale: 1,
     currentPage: '',
     presets: [{
-      name: "iPhone 6/6s",
+      name: "iPhone 6/6S/7/8",
       height: 667,
       width: 375,
+      scale: 1
+    },
+    {
+      name: "iPhone XR/XS Max",
+      height: 896,
+      width: 414,
+      scale: 1
+    },
+    {
+      name: "iPhone X/XS",
+      height: 812,
+      width: 375,
+      scale: 1
+    },
+    {
+      name: "iPhone 6+/6S+/7+8+",
+      height: 736,
+      width: 414,
+      scale: 1
+    },
+    {
+      name: "iPhone 5",
+      height: 568,
+      width: 320,
+      scale: 1
+    },
+    {
+      name: "iPad Pro",
+      height: 1366,
+      width: 1024,
       scale: 1
     }],
     selectedPreset: '',
