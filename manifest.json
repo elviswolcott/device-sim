@@ -1,0 +1,113 @@
+{
+  "manifest_version": 1,
+  "type": "WebApp",
+  "meta": {
+    "minimum-overwolf-version": "0.91.229.0",
+    "name": "Device Simulator",
+    "version": "1.0.0",
+    "author": "Elvis Wolcott",
+    "icon": "IconMouseOver.png",
+    "icon_gray": "IconMouseNormal.png",
+    "description": "Useful for recording demos, this app opens your site in a iframe without the borders and supports custom sizing and up to 5 windows at once.",
+    "dock_button_title": "Simulator"
+  },
+  "data": {
+    "start_window": "controller",
+    "windows": {
+      "controller": {
+        "file": "views/controller.html",
+        "transparent": "false",
+				"grab_keyboard_focus": "true",
+        "size": {
+          "width": 400,
+          "height": 300
+        }
+      },
+      "device_1": {
+        "file": "views/device.html",
+        "transparent": true,
+        "resizable": true,
+        "size": {
+          "width": 400,
+          "height": 300
+        },
+        "min_size": {
+          "width": 200,
+          "height": 200
+        },
+        "max_size": {
+          "width": 1600,
+          "height": 1500
+        }
+      },
+      "device_2": {
+        "file": "views/device.html",
+        "transparent": true,
+        "resizable": true,
+        "size": {
+          "width": 400,
+          "height": 300
+        },
+        "min_size": {
+          "width": 200,
+          "height": 200
+        },
+        "max_size": {
+          "width": 1600,
+          "height": 1500
+        }
+      },
+      "device_3": {
+        "file": "views/device.html",
+        "transparent": true,
+        "resizable": true,
+        "size": {
+          "width": 400,
+          "height": 300
+        },
+        "min_size": {
+          "width": 200,
+          "height": 200
+        },
+        "max_size": {
+          "width": 1600,
+          "height": 1500
+        }
+      },
+      "device_4": {
+        "file": "views/device.html",
+        "transparent": true,
+        "resizable": true,
+        "size": {
+          "width": 400,
+          "height": 300
+        },
+        "min_size": {
+          "width": 200,
+          "height": 200
+        },
+        "max_size": {
+          "width": 1600,
+          "height": 1500
+        }
+      },
+      "device_5": {
+        "file": "views/device.html",
+        "transparent": true,
+        "resizable": true,
+        "size": {
+          "width": 400,
+          "height": 300
+        },
+        "min_size": {
+          "width": 200,
+          "height": 200
+        },
+        "max_size": {
+          "width": 1600,
+          "height": 1500
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Device</title>
+  <style>
+    body {
+      margin: 0px;
+      overflow: hidden;
+    }
+    #move {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 30px;
+    }
+    #move:hover {
+      background-color: rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+  <div id="move" onmousedown="overwolf.windows.dragMove(`device_${window.DEVICE_NUMBER}`)"></div>
+  <iframe src="" style="border: none; width: 100%; height: 100%; overflow: hidden;" id="site"></iframe>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Device Simulator - Controls</title>
+</head>
+<body>
+  <div id="app">
+    <button @click="newDevice()">New Device +</button>
+    <div v-if="selected != 0">
+      Devices:
+      <button v-for="(device, index) in added" :key="index" @click="selected = index + 1">{{index+1}}</button>
+      <br>
+      Width: <input type="number" v-model="currentWidth">
+      <br>
+      Height: <input type="number" v-model="currentHeight">
+      <br>
+      Scale: <input type="number" v-model="currentScale">
+      <br>
+      Navigate: <input type="text" v-model="currentPage"> <button @click="navigate">go</button>
+      <br>
+      Preset: 
+      <select v-model="selectedPreset">
+        <option disabled value="">Select a preset</option>
+        <option v-for="(preset, index) in presets" :value="index">{{preset.name}}</option>
+      </select>
+      <br>
+      <button @click="doHide()">Hide</button>
+    </div>
+  </div>
+  <script src="../scripts/ow-async.js"></script>
+  <script src="../scripts/vue.js"></script>
+  <script src="../scripts/controller.js"></script>
+</body>
+</html>
