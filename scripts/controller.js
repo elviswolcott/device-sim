@@ -90,6 +90,12 @@ var model = new Vue({
     doHide: async function() {
       await minimize(`device_${this.$data.selected}`);
     },
+    switchThem: function() {
+      const h = this.$data.currentHeight;
+      console.log("swapping width and height");
+      this.$data.currentHeight = this.$data.currentWidth;
+      this.$data.currentWidth = h;
+    }
   },
   watch: {
     selectedPreset: function(selected) {
